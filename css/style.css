@@ -1,9 +1,113 @@
 body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f1f1f1;
     box-sizing: border-box;
     margin: 0;
     padding:0;
     font-size: 18px;
 }
+
+div{
+    display: block;
+}
+
+/* Content */
+
+.mainContent{
+    display:block;
+    flex-direction:column;
+    width: 1100px;
+    background-color: #f1f1f1;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
+    margin: 40px auto;
+}
+
+/* About Me */
+
+.aboutMe{
+    text-align: center;
+    padding-bottom: 15px;
+    margin-bottom: 35px;
+
+}
+
+/* Slieshow Gallery */
+
+aside{
+    float:right;
+}
+
+img {
+    max-height: 500px;
+    vertical-align: middle;
+}
+
+.container {
+    position: relative;
+}
+
+.mySlides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+    right: 0%;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.caption-container {
+    text-align: center;
+    background-color: #888;
+    padding: 2px 16px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+/* Navigation Menu */
 nav {
     border-bottom: 1px solid #ccc;
     background: #f1f1f1;
@@ -48,7 +152,7 @@ nav ul li a:hover{
     background: #e1e1e1;
 }
 
-@media(max-width: 480px){
+@media(max-width: 550px){
     nav .mobile-bar {
         display: flex;
     }
@@ -84,3 +188,4 @@ nav ul li a:hover{
         display: block;
     }
 }
+

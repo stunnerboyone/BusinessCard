@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anatolii Polishchuk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Smuel Super Cat</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!--Navigation Menu-->
     <nav>
         <ul id="menu">
             <li><a href="">Home</a></li>
@@ -20,10 +24,71 @@
             <span></span>
             <span></span>
         </div>
-
     </nav>
-    <div class="content">
+    <!-- Main container -->
+    <div class="container">
+        <div class="mainContent">
+            <!-- MAin Information -->
+            <div class="aboutMe">
+                <h1>Samuel L Kit</h1>
+                <h3>Just best cat in the world</h3>
+            </div>
 
+            <!-- Slideshow Gallery -->
+            <div class="slideshow">
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <div class="mySlides">
+                    <img src="/img/Sam1.jpg" style="max-width: 100%">
+                </div>
+                
+                <div class="mySlides">
+                    <img src="/img/Interesting.jpg" style="max-width: 100%">
+                </div>
+                
+                <div class="mySlides">
+                    <img src="/img/CuteSam.jpg" style="max-width: 100%">
+                </div>
+                    
+                <div class="mySlides">
+                    <img src="/img/MyToys.jpg" style="max-width: 100%">
+                </div>
+                
+                <div class="mySlides">
+                    <img src="/img/MyBox.jpg" style="max-width: 100%">
+                </div>
+                    
+                <div class="mySlides">
+                    <img src="/img/zZzZz.jpg" style="max-width: 100%">
+                </div>
+                
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <aside class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="/img/Sam1.jpg" style="max-width: 100%" onclick="currentSlide(1)" alt="It's Me">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="/img/Interesting.jpg" style="max-width: 100%" onclick="currentSlide(2)" alt="Interesting...">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="/img/CuteSam.jpg" style="max-width: 100%" onclick="currentSlide(3)" alt="Play with me">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="/img/MyToys.jpg" style="max-width: 100%" onclick="currentSlide(4)" alt="My toys">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="/img/MyBox.jpg" style="max-width: 100%" onclick="currentSlide(5)" alt="MyBox">
+                    </div>    
+                    <div class="column">
+                        <img class="demo cursor" src="/img/zZzZz.jpg" style="max-width: 100%" onclick="currentSlide(6)" alt="zZzZz....">
+                    </div>
+                </aside>
+            </div>
+        </div>
     </div>
 
     <script src="js/script.js"></script>
