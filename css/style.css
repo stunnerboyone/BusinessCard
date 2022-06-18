@@ -33,9 +33,7 @@ div{
 
 /* Slieshow Gallery */
 
-aside{
-    float:right;
-}
+
 
 img {
     max-height: 500px;
@@ -86,6 +84,11 @@ img {
     padding: 2px 16px;
 }
 
+.row img{
+    max-height: 180px;
+    
+}
+
 .row:after {
     content: "";
     display: table;
@@ -93,12 +96,18 @@ img {
 }
 
 .column {
-    float: left;
-    width: 16.66%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    max-width: 100%;
+    list-style-type: none;
 }
 
 .demo {
     opacity: 0.6;
+    max-width: 100%;
 }
 
 .active,
